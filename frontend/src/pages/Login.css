@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f8ff;
+}
+
+.login-container {
+  display: flex;
+  min-height: 90vh;
+}
+
+/* Left Section */
+.left-section {
+  flex: 3;
+  padding: 30px;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+}
+
+.title {
+  text-align: center;
+  color: #1a237e;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+.h2 {
+    text-align: center;
+}
+
+.feature-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 25px;
+  border-radius: 15px;
+  color: rgb(19, 17, 17);
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.feature-card:nth-child(1) {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+}
+
+.feature-card:nth-child(2) {
+  background: linear-gradient(135deg, #a4f1a8, #43a047);
+}
+
+.feature-card:nth-child(3) {
+  background: linear-gradient(135deg, #f1cb90, #f1c287);
+}
+
+.feature-card:nth-child(4) {
+  background: linear-gradient(135deg, #e297f0, #e7aaf8);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Statistics */
+.stats-card {
+  margin-top: 30px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stats h3 {
+  color: #5596f8;
+  font-size: 28px;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  background: linear-gradient(135deg, #8ec5f1, #d689f7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255,255,255,0.95);
+  padding: 35px;
+  border-radius: 20px;
+  width: 330px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #747ff3;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #2196f3, #d396ec);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #0d47a1, #7b1fa2);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 16px;
+}

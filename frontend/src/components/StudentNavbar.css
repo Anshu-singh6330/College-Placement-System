@@ -1,0 +1,105 @@
+
+.navbar {
+  background-color: #ffffff;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2563eb; /* Professional Blue */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #2563eb;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ef4444; /* Red */
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #fff;
+  }
+
+  .nav-links.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  .nav-links li {
+    height: 60px;
+  }
+}

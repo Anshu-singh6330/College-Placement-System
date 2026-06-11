@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/jobportal")
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDb connected"))
 .catch((err) => console.log(err));
 
@@ -50,4 +50,4 @@ app.get("/api/applications/:userId",
   }
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+app.listen(process.env.PORT || 6000, () => console.log("Server running on port 5000"));

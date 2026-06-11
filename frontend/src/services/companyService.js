@@ -1,7 +1,7 @@
 import axios from "axios";
 import authService from "./authService";
 
-const API = "http://localhost:5000/api/companies";
+const API = `${import.meta.env.VITE_API_URL}/companies`;
 
 const getCompanies = async () => {
   const token = authService.getToken();
